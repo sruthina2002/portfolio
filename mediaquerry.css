@@ -1,0 +1,453 @@
+ @media  screen and ( max-width: 1070px){
+    .navigation{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background: rgba(0,0,0,0.1);
+        visibility:hidden;
+        opacity: 0;
+        transition: .3s ease;
+    }
+    .navigation.active{
+        visibility: visible;
+        opacity: 1;
+    }
+    .nav-menu-btn{
+      display: flex;
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+    }
+       
+       .navitems{
+    position: relative;
+    width: 600px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    background: whitesmoke;
+   }
+   .navitems a{
+    margin: 15px 50px;
+   }
+   .nav-close-btn{
+    position: absolute;
+    background-size: 50px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+    display: block;
+   }
+   /* home */
+   .home{
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: calc(3.5rem + 4rem);
+   }
+   .section {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto; /* Updated: Center align horizontally */
+    padding: 4rem 2rem 2rem;
+  }
+  .home-container img{
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+  }
+
+  /* about */
+  .about-container .trans-heading {
+    font-size: 80px; /* Adjust the font size as desired */
+    padding-left: 250px; /* Adjust the padding as desired */
+}
+.skills-container .trans-heading {
+  font-size: 80px; /* Adjust the font size as desired */
+  padding-left: 250px; /* Adjust the padding as desired */
+}
+.portfolio-container .trans-heading {
+  font-size: 75px; /* Adjust the font size as desired */
+  padding-left: 250px; /* Adjust the padding as desired */
+}
+.service-container .trans-heading {
+  font-size: 80px; /* Adjust the font size as desired */
+  padding-left: 250px; /* Adjust the padding as desired */
+}
+.contact .trans-heading {
+  font-size: 80px; /* Adjust the font size as desired */
+  padding-left: 250px; /* Adjust the padding as desired */
+}
+.trans-heading:before {
+    width: 250px; /* Adjust the width as desired */
+}
+  .about-container .about-content {
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+  }
+  .about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-img img{
+    min-width: 0;
+    width: 60%;
+  }
+  .about-info {
+    min-width: 0;
+    width: 100%;
+  }
+  .about-content{
+    padding-top: 35px;
+  }
+  .about-info{
+    padding-top: 50px;
+  }
+ 
+  /* skills */
+  .skills-content{
+    padding-top: 20px;
+  }
+  .skills-info h4 label{
+    font-size: 20px;
+  }
+
+  /* service */
+  .service-swiper .swiper-slide{
+    flex-direction: column;
+  }
+  .service-description{
+    text-align: center;
+  }
+/* contact*/
+.contact .content{
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+.contact .contact-left{
+  margin-bottom: 40px;
+}
+.contact .content-left{
+  margin-bottom: 40px;
+}
+
+.contact-form .second-row{
+  flex-direction: column;
+}
+.contact-form .second-row input{
+  width: 95%;
+}
+
+/* footer */
+footer{
+  max-width: 1070px;
+  margin:0 auto;
+}
+footer .footer-container{
+  flex-direction: column;
+}
+.footer-container .about, .footer-container .info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.footer-container .info ul{
+  align-items: center;
+  flex-direction: column;
+}
+.footer-container .info{
+  margin: 5px 0 ;
+}
+.footer-container .hr{
+  width: 100%;
+  height: 0.5px;
+  background: rgba(255,255,255,255);
+  margin: 5px 0 12px;
+}
+}
+
+@media screen and (max-width:1095px){
+  .portfolio-list .img-card-container{
+    width: 100%;
+    height: 255px;
+  }
+  .portfolio-list .img-card{
+    height: 260px;
+  }
+}
+
+   @media screen and (max-width: 950px) {
+    .section {
+      width: 950px; /* Updated: Remove max-width to allow full width */
+      margin: 0 auto; 
+    }
+
+    .home{
+      width: 950px;
+      height: 100vh;
+      margin: 0 auto;
+      justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: calc(3.5rem + 5rem);
+     }
+     
+     .home .home-container {
+      text-align: center; /* Center-align content on smaller screens */
+    }
+  
+    .home-container img {
+      margin-right: 0;
+      margin-left: 0; /* Remove right margin on smaller screens */
+    }
+  
+    .home-container h2 {
+      text-align: center; /* Center-align heading on smaller screens */
+      font-size: 1.8rem; /* Adjust font size for the heading on smaller screens */
+    }
+  
+    .home-info .typed-text {
+      font-size: 3.5rem; /* Adjust font size for the typed text on smaller screens */
+    }
+    
+    
+    .edu-list .item{
+       width: 95%;
+    }
+    .bars{
+      width: 95%;
+    }
+    
+        footer {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+        width: 950px;
+        margin: 0 auto;
+      }
+    
+      .footer-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center; /* Center-align content for smaller screens */
+      }
+    
+      .footer-container .about h2 {
+        font-size: 2.5em; /* Decrease font size for the h2 on smaller screens */
+      }
+    
+      .footer-container .info ul,
+      .footer-container .follow ul {
+        flex-direction: column; /* Stack list items vertically on smaller screens */
+      }
+    
+      .footer-container .info a,
+      .footer-container .follow a {
+        margin: 10px; /* Reduce link margins for smaller screens */
+      }
+    
+      .footer-container .follow ul {
+        justify-content: space-between; /* Adjust the social media icon spacing */
+        max-width: 250px; /* Limit the width of the social media icons container */
+        margin: 0 auto; /* Center the social media icons */
+      }
+    
+    }
+    @media (max-width: 767px) {
+      .home {
+        min-height: 100vh;
+         /* Ensure the home section takes up the full viewport height */
+         margin-top: calc(3.5rem + 5rem);
+      }
+      .home-container img {
+        width: 90%; /* Adjust the image width for smaller screens */
+      }
+      /* .home .home-container img{
+        width: 50%;
+        height: 70%;
+      } */
+    }
+      
+
+  /* Add the following media query */
+  @media screen and (max-width: 728px) {
+    .section {
+      max-width: 730px; /* Updated: Remove max-width to allow full width */
+      margin: 0 auto;
+    }
+    .home{
+      max-width: 728px;
+      margin: 0 auto;
+      margin-top: calc(5rem + 5rem);
+     }
+    
+    
+  
+    .home-container img {
+      margin-right: 0; /* Remove right margin on smaller screens */
+    }
+  
+    .home-container h2 {
+      text-align: center; /* Center-align heading on smaller screens */
+      font-size: 1.8rem; /* Adjust font size for the heading on smaller screens */
+    }
+  
+    .home-info .typed-text {
+      font-size: 3.5rem; /* Adjust font size for the typed text on smaller screens */
+    }
+     .about-description p{
+          font-size: 15px;
+    }
+    .skills-description p{
+      font-size: 15px;
+    }
+    .skills-description h3{
+      font-size:1.2rem;
+    }
+    .portfolio-list .img-card-container{
+      width: 100%;
+      height: 390px;
+    
+      /* align-items: center;
+      display: flex;
+      justify-content: center; */
+    }
+    .portfolio-list .img-card{
+      height: 380px;
+    }
+    .img-card img{
+      width:50%;
+    height: 80%;
+    }
+    footer {
+      padding: 2rem 1rem; /* Reduce padding for smaller screens */
+      width: 728px;
+      margin: 0 auto;
+    }
+  
+    .footer-container {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      text-align: center; /* Center-align content for smaller screens */
+    }
+  
+    .footer-container .about h2 {
+      font-size: 2.5em; /* Decrease font size for the h2 on smaller screens */
+    }
+  
+    .footer-container .info ul,
+    .footer-container .follow ul {
+      flex-direction: column; /* Stack list items vertically on smaller screens */
+    }
+  
+    .footer-container .info a,
+    .footer-container .follow a {
+      margin: 10px; /* Reduce link margins for smaller screens */
+    }
+  
+    .footer-container .follow ul {
+      justify-content: space-between; /* Adjust the social media icon spacing */
+      max-width: 250px; /* Limit the width of the social media icons container */
+      margin: 0 auto; /* Center the social media icons */
+    }
+    .trans-headingC{
+      font-size: 40px;
+      background: linear-gradient(to top, transparent 0%,#bbaecb 100% );
+      display: flex;
+      padding-left:350px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0.8;
+  }
+     .trans-headingC:before{
+          content: '';
+          position:absolute;
+          width: 450px;
+          height: 3px;
+          top: 80px;
+          left: 0;
+          background-color:#10274e;
+          opacity: 0.1;
+      }
+  
+  }
+  
+
+  @media screen and (max-width:385px){
+    .section {
+      max-width: 728px; /* Updated: Remove max-width to allow full width */
+      margin: 0 auto;
+    }
+   .home{
+    margin-top: calc(2rem + 8rem);
+   }
+
+    /* about */
+    .about-content{
+      padding-top: 35px;
+    }
+    .about-info{
+      padding-top: 50px;
+    }
+    
+    .about-description p{
+      font-size: 25px;
+    }
+    .about-description p{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .about-info .btn{
+      font-size: 20px;
+    }
+    /* skills */
+    .skills-content{
+      padding-top: 20px;
+    }
+    .skills-description h3{
+      font-size:2.2rem;
+    }
+    .skills-description p{
+      font-size: 15px;
+    }
+    .edu-list .item .year{
+      font-size: 20px;
+    }
+    .edu-list .item p{
+      font-size: 20px;
+    }
+    .edu-list .item span{
+      font-size: 25px;
+    }
+    .bar .info span{
+      font-size: 20px;
+    }
+    .skills-info h4 label{
+      font-size: 20px;
+    }
+    .view-more-btn {
+    margin-left: 0;
+    }
+  }
+
+  
+    
+  
+   /* home */
+   .home .home-container .home-info{
+    font-size:0.85rem;
+   }
+   
